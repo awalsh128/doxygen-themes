@@ -1,0 +1,134 @@
+\hypertarget{classTriangle}{}\doxysection{Triangle Class Reference}
+\label{classTriangle}\index{Triangle@{Triangle}}
+
+
+{\ttfamily \#include $<$triangle.\+h$>$}
+
+
+
+Inheritance diagram for Triangle\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=135pt]{classTriangle__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Triangle\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=142pt]{classTriangle__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classTriangle_abf0a8190c053c2beaaaa39cfa2ca07d1}{Triangle}} (int b, int h, int x, int y)
+\item 
+\mbox{\hyperlink{classTriangle_ac473d7c83104a15743395b1c159b7f56}{Triangle}} (int b, int h, \mbox{\hyperlink{classPoint}{Point}} c)
+\item 
+virtual std\+::string \mbox{\hyperlink{classTriangle_a231027dc34cc1629edf324059d43a429}{get\+Type}} () const
+\item 
+virtual double \mbox{\hyperlink{classTriangle_a5f7fa9fd678345063e50e3458d943a9b}{get\+Area}} () const
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+A class that represents a triangle on a 2D plane. Its only members are its base and height. It inherits all of its functionality from the \mbox{\hyperlink{classShape}{Shape}} class.
+
+\begin{DoxyAuthor}{Author}
+Brent Nash 
+\end{DoxyAuthor}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classTriangle_abf0a8190c053c2beaaaa39cfa2ca07d1}\label{classTriangle_abf0a8190c053c2beaaaa39cfa2ca07d1}} 
+\index{Triangle@{Triangle}!Triangle@{Triangle}}
+\index{Triangle@{Triangle}!Triangle@{Triangle}}
+\doxysubsubsection{\texorpdfstring{Triangle()}{Triangle()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Triangle\+::\+Triangle (\begin{DoxyParamCaption}\item[{int}]{b,  }\item[{int}]{h,  }\item[{int}]{x,  }\item[{int}]{y }\end{DoxyParamCaption})}
+
+Overloaded constructor that takes in a base, a height and an (x,y) coordinate.
+
+
+\begin{DoxyParams}{Parameters}
+{\em b} & The base of the triangle (must be greater than 0) \\
+\hline
+{\em h} & The height of the triangle (must be greater than 0) \\
+\hline
+{\em x} & The X coordinate of the triangle\textquotesingle{}s center point in 2D space \\
+\hline
+{\em y} & The Y coordinate of the triangle\textquotesingle{}s center point in 2D space \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classTriangle_ac473d7c83104a15743395b1c159b7f56}\label{classTriangle_ac473d7c83104a15743395b1c159b7f56}} 
+\index{Triangle@{Triangle}!Triangle@{Triangle}}
+\index{Triangle@{Triangle}!Triangle@{Triangle}}
+\doxysubsubsection{\texorpdfstring{Triangle()}{Triangle()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Triangle\+::\+Triangle (\begin{DoxyParamCaption}\item[{int}]{b,  }\item[{int}]{h,  }\item[{\mbox{\hyperlink{classPoint}{Point}}}]{c }\end{DoxyParamCaption})}
+
+Overloaded constructor that takes in a base, a height, and a center \mbox{\hyperlink{classPoint}{Point}}.
+
+
+\begin{DoxyParams}{Parameters}
+{\em b} & The base of the triangle (must be greater than 0) \\
+\hline
+{\em h} & The height of the triangle (must be greater than 0) \\
+\hline
+{\em c} & The center point of the triangle in 2D space \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classTriangle_a5f7fa9fd678345063e50e3458d943a9b}\label{classTriangle_a5f7fa9fd678345063e50e3458d943a9b}} 
+\index{Triangle@{Triangle}!getArea@{getArea}}
+\index{getArea@{getArea}!Triangle@{Triangle}}
+\doxysubsubsection{\texorpdfstring{getArea()}{getArea()}}
+{\footnotesize\ttfamily double Triangle\+::get\+Area (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Virtual function overridden from \mbox{\hyperlink{classShape}{Shape}}. Returns the area of the triangle as (1/2)$\ast$base$\ast$height.
+
+\begin{DoxyPrecond}{Precondition}
+The base and height must be set to valid numbers. 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+Does not change the object 
+\end{DoxyPostcond}
+\begin{DoxyReturn}{Returns}
+The area of the circle as a floating point number. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classShape_ad9454ee04617290547e7529180b1beae}{Shape}}.
+
+\mbox{\Hypertarget{classTriangle_a231027dc34cc1629edf324059d43a429}\label{classTriangle_a231027dc34cc1629edf324059d43a429}} 
+\index{Triangle@{Triangle}!getType@{getType}}
+\index{getType@{getType}!Triangle@{Triangle}}
+\doxysubsubsection{\texorpdfstring{getType()}{getType()}}
+{\footnotesize\ttfamily string Triangle\+::get\+Type (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Virtual function overridden from \mbox{\hyperlink{classShape}{Shape}}. Returns a string indicating what type of shape this object is. \begin{DoxyPrecond}{Precondition}
+None 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+Does not change the object 
+\end{DoxyPostcond}
+\begin{DoxyReturn}{Returns}
+The string \char`\"{}\+Triangle\char`\"{} 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classShape_a3703ac99c3b3008da7b57ddbe00b7d29}{Shape}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/home/awalsh128/doxygen-\/themes/example\+\_\+src/triangle.\+h\item 
+/home/awalsh128/doxygen-\/themes/example\+\_\+src/triangle.\+cpp\end{DoxyCompactItemize}

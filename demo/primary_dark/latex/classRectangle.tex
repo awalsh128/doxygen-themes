@@ -1,0 +1,134 @@
+\hypertarget{classRectangle}{}\doxysection{Rectangle Class Reference}
+\label{classRectangle}\index{Rectangle@{Rectangle}}
+
+
+{\ttfamily \#include $<$rectangle.\+h$>$}
+
+
+
+Inheritance diagram for Rectangle\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=145pt]{classRectangle__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Rectangle\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=147pt]{classRectangle__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classRectangle_a6abf24d97fe58709c1e4c859c583a078}{Rectangle}} (int l, int w, int x, int y)
+\item 
+\mbox{\hyperlink{classRectangle_a2c68b6c5cfa2bd2e284f1fa8e5ab19cb}{Rectangle}} (int l, int w, \mbox{\hyperlink{classPoint}{Point}} c)
+\item 
+virtual std\+::string \mbox{\hyperlink{classRectangle_a081667d0f31ff24bc71161dacf904b27}{get\+Type}} () const
+\item 
+virtual double \mbox{\hyperlink{classRectangle_aa4dabfde91776b1cc0a0a3217ae67778}{get\+Area}} () const
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+A class that represents a rectangle on a 2D plane. Its only members are its length and width. It inherits all of its functionality from the \mbox{\hyperlink{classShape}{Shape}} class.
+
+\begin{DoxyAuthor}{Author}
+Brent Nash 
+\end{DoxyAuthor}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classRectangle_a6abf24d97fe58709c1e4c859c583a078}\label{classRectangle_a6abf24d97fe58709c1e4c859c583a078}} 
+\index{Rectangle@{Rectangle}!Rectangle@{Rectangle}}
+\index{Rectangle@{Rectangle}!Rectangle@{Rectangle}}
+\doxysubsubsection{\texorpdfstring{Rectangle()}{Rectangle()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Rectangle\+::\+Rectangle (\begin{DoxyParamCaption}\item[{int}]{l,  }\item[{int}]{w,  }\item[{int}]{x,  }\item[{int}]{y }\end{DoxyParamCaption})}
+
+Overloaded constructor that takes in a length, a width, and an (x,y) coordinate.
+
+
+\begin{DoxyParams}{Parameters}
+{\em l} & The length of the rectangle (must be greater than 0) \\
+\hline
+{\em w} & The width of the rectangle (must be greater than 0) \\
+\hline
+{\em x} & The X coordinate of the rectangle\textquotesingle{}s center point in 2D space \\
+\hline
+{\em y} & The Y coordinate of the rectangle\textquotesingle{}s center point in 2D space \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classRectangle_a2c68b6c5cfa2bd2e284f1fa8e5ab19cb}\label{classRectangle_a2c68b6c5cfa2bd2e284f1fa8e5ab19cb}} 
+\index{Rectangle@{Rectangle}!Rectangle@{Rectangle}}
+\index{Rectangle@{Rectangle}!Rectangle@{Rectangle}}
+\doxysubsubsection{\texorpdfstring{Rectangle()}{Rectangle()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Rectangle\+::\+Rectangle (\begin{DoxyParamCaption}\item[{int}]{l,  }\item[{int}]{w,  }\item[{\mbox{\hyperlink{classPoint}{Point}}}]{c }\end{DoxyParamCaption})}
+
+Overloaded constructor that takes in a length, a width, and a center \mbox{\hyperlink{classPoint}{Point}}.
+
+
+\begin{DoxyParams}{Parameters}
+{\em l} & The length of the rectangle (must be greater than 0) \\
+\hline
+{\em w} & The width of the rectangle (must be greater than 0) \\
+\hline
+{\em c} & The center point of the rectangle in 2D space \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classRectangle_aa4dabfde91776b1cc0a0a3217ae67778}\label{classRectangle_aa4dabfde91776b1cc0a0a3217ae67778}} 
+\index{Rectangle@{Rectangle}!getArea@{getArea}}
+\index{getArea@{getArea}!Rectangle@{Rectangle}}
+\doxysubsubsection{\texorpdfstring{getArea()}{getArea()}}
+{\footnotesize\ttfamily double Rectangle\+::get\+Area (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Virtual function overridden from \mbox{\hyperlink{classShape}{Shape}}. Returns the area of the rectangle as length$\ast$width.
+
+\begin{DoxyPrecond}{Precondition}
+The length and width must be set to valid numbers. 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+Does not change the object 
+\end{DoxyPostcond}
+\begin{DoxyReturn}{Returns}
+The area of the rectangle as a floating point number. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classShape_ad9454ee04617290547e7529180b1beae}{Shape}}.
+
+\mbox{\Hypertarget{classRectangle_a081667d0f31ff24bc71161dacf904b27}\label{classRectangle_a081667d0f31ff24bc71161dacf904b27}} 
+\index{Rectangle@{Rectangle}!getType@{getType}}
+\index{getType@{getType}!Rectangle@{Rectangle}}
+\doxysubsubsection{\texorpdfstring{getType()}{getType()}}
+{\footnotesize\ttfamily string Rectangle\+::get\+Type (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Virtual function overridden from \mbox{\hyperlink{classShape}{Shape}}. Returns a string indicating what type of shape this object is. \begin{DoxyPrecond}{Precondition}
+None 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+Does not change the object 
+\end{DoxyPostcond}
+\begin{DoxyReturn}{Returns}
+The string \char`\"{}\+Rectangle\char`\"{} 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classShape_a3703ac99c3b3008da7b57ddbe00b7d29}{Shape}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/home/awalsh128/doxygen-\/themes/example\+\_\+src/rectangle.\+h\item 
+/home/awalsh128/doxygen-\/themes/example\+\_\+src/rectangle.\+cpp\end{DoxyCompactItemize}

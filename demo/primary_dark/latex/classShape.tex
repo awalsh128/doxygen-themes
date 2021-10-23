@@ -1,0 +1,177 @@
+\hypertarget{classShape}{}\doxysection{Shape Class Reference}
+\label{classShape}\index{Shape@{Shape}}
+
+
+{\ttfamily \#include $<$shape.\+h$>$}
+
+
+
+Inheritance diagram for Shape\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=281pt]{classShape__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Shape\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=138pt]{classShape__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classShape_a2ff2a9c01af9b5e717d97bb06a049d76}{Shape}} (int x, int y)
+\item 
+\mbox{\hyperlink{classShape_a5df33f53d708b57861ba3c0dcafe992f}{Shape}} (\mbox{\hyperlink{classPoint}{Point}} c)
+\item 
+\mbox{\hyperlink{classPoint}{Point}} \mbox{\hyperlink{classShape_a17475001d7bf9e6300f68f350ca0cfaa}{get\+Center}} () const
+\item 
+void \mbox{\hyperlink{classShape_a53e6bbf78c449b52cff5b91e99bf31b1}{set\+Center}} (\mbox{\hyperlink{classPoint}{Point}} c)
+\item 
+virtual std\+::string \mbox{\hyperlink{classShape_a3703ac99c3b3008da7b57ddbe00b7d29}{get\+Type}} () const =0
+\item 
+virtual double \mbox{\hyperlink{classShape_ad9454ee04617290547e7529180b1beae}{get\+Area}} () const =0
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classPoint}{Point}} \mbox{\hyperlink{classShape_afa00babba48f541ad2754cb22a83c421}{center}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+An abstract base class that represents a shape on a 2D plane. Its only member is \char`\"{}center\char`\"{} which maintains the center point of the shape. It has pure virtual methods for identifying the type of shape and calculating the shape\textquotesingle{}s area that must be implemented by subclasses.
+
+\begin{DoxyAuthor}{Author}
+Brent Nash 
+\end{DoxyAuthor}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classShape_a2ff2a9c01af9b5e717d97bb06a049d76}\label{classShape_a2ff2a9c01af9b5e717d97bb06a049d76}} 
+\index{Shape@{Shape}!Shape@{Shape}}
+\index{Shape@{Shape}!Shape@{Shape}}
+\doxysubsubsection{\texorpdfstring{Shape()}{Shape()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Shape\+::\+Shape (\begin{DoxyParamCaption}\item[{int}]{x,  }\item[{int}]{y }\end{DoxyParamCaption})}
+
+Overloaded constructor that takes in an (x,y) coordinate.
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & The X coordinate of the shape\textquotesingle{}s center point in 2D space \\
+\hline
+{\em y} & The Y coordinate of the shape\textquotesingle{}s center point in 2D space \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classShape_a5df33f53d708b57861ba3c0dcafe992f}\label{classShape_a5df33f53d708b57861ba3c0dcafe992f}} 
+\index{Shape@{Shape}!Shape@{Shape}}
+\index{Shape@{Shape}!Shape@{Shape}}
+\doxysubsubsection{\texorpdfstring{Shape()}{Shape()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Shape\+::\+Shape (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classPoint}{Point}}}]{c }\end{DoxyParamCaption})}
+
+Overloaded constructor that takes in a center \mbox{\hyperlink{classPoint}{Point}}.
+
+
+\begin{DoxyParams}{Parameters}
+{\em c} & The center point of the shape in 2D space \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classShape_ad9454ee04617290547e7529180b1beae}\label{classShape_ad9454ee04617290547e7529180b1beae}} 
+\index{Shape@{Shape}!getArea@{getArea}}
+\index{getArea@{getArea}!Shape@{Shape}}
+\doxysubsubsection{\texorpdfstring{getArea()}{getArea()}}
+{\footnotesize\ttfamily virtual double Shape\+::get\+Area (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Pure virtual function for \mbox{\hyperlink{classShape}{Shape}} subclasses. Subclasses overriding this method should use it to calculate the area of the shape and return the area as a floating point number. \begin{DoxyPrecond}{Precondition}
+Valid data must be set on the \mbox{\hyperlink{classShape}{Shape}} object 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+Does not change the object 
+\end{DoxyPostcond}
+\begin{DoxyReturn}{Returns}
+A floating point number representing the area of the \mbox{\hyperlink{classShape}{Shape}} 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{classRectangle_aa4dabfde91776b1cc0a0a3217ae67778}{Rectangle}}, \mbox{\hyperlink{classTriangle_a5f7fa9fd678345063e50e3458d943a9b}{Triangle}}, and \mbox{\hyperlink{classCircle_a7bfb5ab5c8d4f11890407a2483ad61ee}{Circle}}.
+
+\mbox{\Hypertarget{classShape_a17475001d7bf9e6300f68f350ca0cfaa}\label{classShape_a17475001d7bf9e6300f68f350ca0cfaa}} 
+\index{Shape@{Shape}!getCenter@{getCenter}}
+\index{getCenter@{getCenter}!Shape@{Shape}}
+\doxysubsubsection{\texorpdfstring{getCenter()}{getCenter()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classPoint}{Point}} Shape\+::get\+Center (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+Accessor for the shape\textquotesingle{}s center point.
+
+\begin{DoxyPrecond}{Precondition}
+None 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+Does not change the object 
+\end{DoxyPostcond}
+\begin{DoxyReturn}{Returns}
+The current center point of the shape as a \mbox{\hyperlink{classPoint}{Point}} object. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classShape_a3703ac99c3b3008da7b57ddbe00b7d29}\label{classShape_a3703ac99c3b3008da7b57ddbe00b7d29}} 
+\index{Shape@{Shape}!getType@{getType}}
+\index{getType@{getType}!Shape@{Shape}}
+\doxysubsubsection{\texorpdfstring{getType()}{getType()}}
+{\footnotesize\ttfamily virtual std\+::string Shape\+::get\+Type (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Pure virtual function for \mbox{\hyperlink{classShape}{Shape}} subclasses. Returns a string indicating what type of shape this object is. \begin{DoxyPrecond}{Precondition}
+None 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+Does not change the object 
+\end{DoxyPostcond}
+\begin{DoxyReturn}{Returns}
+A string name of the current shape 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{classRectangle_a081667d0f31ff24bc71161dacf904b27}{Rectangle}}, \mbox{\hyperlink{classTriangle_a231027dc34cc1629edf324059d43a429}{Triangle}}, and \mbox{\hyperlink{classCircle_af839aaf1ced7986df1c1904335610b70}{Circle}}.
+
+\mbox{\Hypertarget{classShape_a53e6bbf78c449b52cff5b91e99bf31b1}\label{classShape_a53e6bbf78c449b52cff5b91e99bf31b1}} 
+\index{Shape@{Shape}!setCenter@{setCenter}}
+\index{setCenter@{setCenter}!Shape@{Shape}}
+\doxysubsubsection{\texorpdfstring{setCenter()}{setCenter()}}
+{\footnotesize\ttfamily void Shape\+::set\+Center (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classPoint}{Point}}}]{c }\end{DoxyParamCaption})}
+
+Mutator for the shape\textquotesingle{}s center point.
+
+\begin{DoxyPrecond}{Precondition}
+None 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+The \char`\"{}center\char`\"{} member variable of \mbox{\hyperlink{classShape}{Shape}} will be changed to the input value. 
+\end{DoxyPostcond}
+
+\begin{DoxyParams}{Parameters}
+{\em c} & The new center point for the \mbox{\hyperlink{classShape}{Shape}}. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classShape_afa00babba48f541ad2754cb22a83c421}\label{classShape_afa00babba48f541ad2754cb22a83c421}} 
+\index{Shape@{Shape}!center@{center}}
+\index{center@{center}!Shape@{Shape}}
+\doxysubsubsection{\texorpdfstring{center}{center}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classPoint}{Point}} Shape\+::center\hspace{0.3cm}{\ttfamily [protected]}}
+
+The center point of the shape as a 2D coordinate 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/home/awalsh128/doxygen-\/themes/example\+\_\+src/shape.\+h\item 
+/home/awalsh128/doxygen-\/themes/example\+\_\+src/shape.\+cpp\end{DoxyCompactItemize}

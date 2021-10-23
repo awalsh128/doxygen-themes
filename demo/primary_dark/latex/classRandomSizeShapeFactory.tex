@@ -1,0 +1,50 @@
+\hypertarget{classRandomSizeShapeFactory}{}\doxysection{Random\+Size\+Shape\+Factory Class Reference}
+\label{classRandomSizeShapeFactory}\index{RandomSizeShapeFactory@{RandomSizeShapeFactory}}
+
+
+{\ttfamily \#include $<$shapefactory.\+h$>$}
+
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{classShape}{Shape}} $\ast$ \mbox{\hyperlink{classRandomSizeShapeFactory_aebd390118a1e8874fc7f2e8c5a62a627}{create\+Shape}} (std\+::string name)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+A factory class to generate Shapes with randomly generated sizes/dimensions.
+
+\begin{DoxyAuthor}{Author}
+Brent Nash 
+\end{DoxyAuthor}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classRandomSizeShapeFactory_aebd390118a1e8874fc7f2e8c5a62a627}\label{classRandomSizeShapeFactory_aebd390118a1e8874fc7f2e8c5a62a627}} 
+\index{RandomSizeShapeFactory@{RandomSizeShapeFactory}!createShape@{createShape}}
+\index{createShape@{createShape}!RandomSizeShapeFactory@{RandomSizeShapeFactory}}
+\doxysubsubsection{\texorpdfstring{createShape()}{createShape()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classShape}{Shape}} $\ast$ Random\+Size\+Shape\+Factory\+::create\+Shape (\begin{DoxyParamCaption}\item[{std\+::string}]{name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Static factory method for creating shapes. Takes in a string representation of a shape and returns a pointer to that particular shape. Only works for shapes that derive from the \mbox{\hyperlink{classShape}{Shape}} object. Center points for returned shapes will always be (0,0).
+
+\begin{DoxyPrecond}{Precondition}
+None 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+Does not change the object 
+\end{DoxyPostcond}
+
+\begin{DoxyParams}{Parameters}
+{\em name} & The name of the shape to generate (e.\+g. \char`\"{}triangle\char`\"{}, \char`\"{}rectangle\char`\"{}, or \char`\"{}circle\char`\"{}). Input is case-\/sensitive. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A pointer to a \mbox{\hyperlink{classShape}{Shape}} object dynamically allocated on the heap if \char`\"{}name\char`\"{} is a valid, recognized shape type or N\+U\+LL if \char`\"{}name\char`\"{} does not specify the name of a known shape. 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/home/awalsh128/doxygen-\/themes/example\+\_\+src/shapefactory.\+h\item 
+/home/awalsh128/doxygen-\/themes/example\+\_\+src/shapefactory.\+cpp\end{DoxyCompactItemize}

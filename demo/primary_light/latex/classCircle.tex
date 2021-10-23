@@ -1,0 +1,130 @@
+\hypertarget{classCircle}{}\doxysection{Circle Class Reference}
+\label{classCircle}\index{Circle@{Circle}}
+
+
+{\ttfamily \#include $<$circle.\+h$>$}
+
+
+
+Inheritance diagram for Circle\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=127pt]{classCircle__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Circle\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=138pt]{classCircle__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classCircle_aae9c477673e3d2b567708445ab0bf37b}{Circle}} (int r, int x, int y)
+\item 
+\mbox{\hyperlink{classCircle_a8aa6804985da2da8a802d790f1938ce0}{Circle}} (int r, \mbox{\hyperlink{classPoint}{Point}} c)
+\item 
+virtual std\+::string \mbox{\hyperlink{classCircle_af839aaf1ced7986df1c1904335610b70}{get\+Type}} () const
+\item 
+virtual double \mbox{\hyperlink{classCircle_a7bfb5ab5c8d4f11890407a2483ad61ee}{get\+Area}} () const
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+A class that represents a circle on a 2D plane. Its only member is its radius and it inherits all of its functionality from the \mbox{\hyperlink{classShape}{Shape}} class.
+
+\begin{DoxyAuthor}{Author}
+Brent Nash 
+\end{DoxyAuthor}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classCircle_aae9c477673e3d2b567708445ab0bf37b}\label{classCircle_aae9c477673e3d2b567708445ab0bf37b}} 
+\index{Circle@{Circle}!Circle@{Circle}}
+\index{Circle@{Circle}!Circle@{Circle}}
+\doxysubsubsection{\texorpdfstring{Circle()}{Circle()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Circle\+::\+Circle (\begin{DoxyParamCaption}\item[{int}]{r,  }\item[{int}]{x,  }\item[{int}]{y }\end{DoxyParamCaption})}
+
+Overloaded constructor that takes in a radius and an (x,y) coordinate.
+
+
+\begin{DoxyParams}{Parameters}
+{\em r} & The radius of the circle (must be greater than 0) \\
+\hline
+{\em x} & The X coordinate of the circle\textquotesingle{}s center point in 2D space \\
+\hline
+{\em y} & The Y coordinate of the circle\textquotesingle{}s center point in 2D space \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classCircle_a8aa6804985da2da8a802d790f1938ce0}\label{classCircle_a8aa6804985da2da8a802d790f1938ce0}} 
+\index{Circle@{Circle}!Circle@{Circle}}
+\index{Circle@{Circle}!Circle@{Circle}}
+\doxysubsubsection{\texorpdfstring{Circle()}{Circle()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Circle\+::\+Circle (\begin{DoxyParamCaption}\item[{int}]{r,  }\item[{\mbox{\hyperlink{classPoint}{Point}}}]{c }\end{DoxyParamCaption})}
+
+Overloaded constructor that takes in a radius and a center \mbox{\hyperlink{classPoint}{Point}}.
+
+
+\begin{DoxyParams}{Parameters}
+{\em r} & The radius of the circle (must be greater than 0) \\
+\hline
+{\em c} & The center point of the circle in 2D space \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classCircle_a7bfb5ab5c8d4f11890407a2483ad61ee}\label{classCircle_a7bfb5ab5c8d4f11890407a2483ad61ee}} 
+\index{Circle@{Circle}!getArea@{getArea}}
+\index{getArea@{getArea}!Circle@{Circle}}
+\doxysubsubsection{\texorpdfstring{getArea()}{getArea()}}
+{\footnotesize\ttfamily double Circle\+::get\+Area (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Virtual function overridden from \mbox{\hyperlink{classShape}{Shape}}. Returns the area of the circle as P\+I$\ast$radius$\ast$radius.
+
+\begin{DoxyPrecond}{Precondition}
+The radius must be set to a valid number. 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+Does not change the object 
+\end{DoxyPostcond}
+\begin{DoxyReturn}{Returns}
+The area of the circle as a floating point number. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classShape_ad9454ee04617290547e7529180b1beae}{Shape}}.
+
+\mbox{\Hypertarget{classCircle_af839aaf1ced7986df1c1904335610b70}\label{classCircle_af839aaf1ced7986df1c1904335610b70}} 
+\index{Circle@{Circle}!getType@{getType}}
+\index{getType@{getType}!Circle@{Circle}}
+\doxysubsubsection{\texorpdfstring{getType()}{getType()}}
+{\footnotesize\ttfamily string Circle\+::get\+Type (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Virtual function overridden from \mbox{\hyperlink{classShape}{Shape}}. Returns a string indicating what type of shape this object is. \begin{DoxyPrecond}{Precondition}
+None 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+Does not change the object 
+\end{DoxyPostcond}
+\begin{DoxyReturn}{Returns}
+The string \char`\"{}\+Circle\char`\"{} 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classShape_a3703ac99c3b3008da7b57ddbe00b7d29}{Shape}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/home/awalsh128/doxygen-\/themes/example\+\_\+src/circle.\+h\item 
+/home/awalsh128/doxygen-\/themes/example\+\_\+src/circle.\+cpp\end{DoxyCompactItemize}

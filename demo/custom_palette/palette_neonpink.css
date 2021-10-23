@@ -1,0 +1,14 @@
+:root {
+  --color-body: #bda9a9;
+  --color-hyperlink: #ffffff;
+  --color-title-background: #8a1253;
+  --color-title-text: #ffffff;
+  --color-footer-header-background: #c51350;
+  --color-footer-header-text: #ffffff;
+  --color-section-header-background: #e8751a;
+  --color-section-header-text: #ffffff;
+  --color-section-subheader-background: #fda403;
+  --color-section-subheader-text: #ffffff;
+  --color-section-text: #ffffff;
+  --color-section-background: #bd9a9a;
+}

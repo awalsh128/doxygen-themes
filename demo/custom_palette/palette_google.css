@@ -1,0 +1,16 @@
+:root {
+  --color-body: #F5F8FA;
+  --color-hyperlink: #003f66;
+  --color-title-background: #DB4437;
+  --color-title-text: #ffffff;
+  --color-footer-header-background: #4285F4;
+  --color-footer-header-text: #ffffff;
+  --color-section-header-background: #F4B400;
+  --color-section-header-text: #ffffff;
+  --color-section-subheader-background: #0F9D58;
+  --color-section-subheader-text: #ffffff;
+  --color-section-background: #AAB8C2;
+  --color-section-text: #ffffff;  
+  --color-subsection-background: #E1E8ED;
+  --color-subsection-text: #000000;
+}
