@@ -1,0 +1,55 @@
+/* Sticky footer styles */
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  background-color: #CAFAFE;
+  margin-bottom: 60px; /* Margin bottom by footer height */
+}
+
+.fa,
+.fab {
+  padding-right: 5px; /* Gap between fontawesome icon and text. */
+}
+
+footer {
+  background-color: #55BCC9;  
+  margin-top: 1rem;
+  padding: 1rem;
+  position: absolute;
+  bottom: 0;
+  padding: 1rem;
+  width: 100%;
+  height: 3.5rem;
+}
+footer > a {
+  color: #ffffff;
+}
+
+header {
+  background-color: #55BCC9;
+  background-image: linear-gradient();
+}
+
+.list-group-item {
+  color: #6e92ac;
+}
+
+/* Keep order to override .list-group-item:color */
+.menu-title {
+  background-color: #97CAEF;
+  color: #FFFFFF;
+  font-size: 1.5rem;
+}
+
+main {
+  padding-top: 3em;
+  padding-bottom: 3em;
+}
